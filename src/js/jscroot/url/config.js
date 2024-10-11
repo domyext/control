@@ -27,7 +27,7 @@ export const backend={
     }
 }
 
-export const croot = folderPath()+"jscroot/";
+export const croot = folderPath()+"src/js/jscroot/";
 
 export const folder={
     template:croot+"template/",
