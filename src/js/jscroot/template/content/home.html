@@ -1,134 +1,164 @@
-<div class="">
-  <section class="info-tiles">
-    <div class="tile is-ancestor has-text-centered">
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title" id="bigtodo">
-            <span class="icon"><i class="fa fa-tasks" aria-hidden="true"></i></span> 0
-          </p>
-          <p class="subtitle">To Do</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title" id="bigdoing">
-            <span class="icon"><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i></span> 0
-          </p>
-          <p class="subtitle">Doing</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title" id="bigdone">
-            <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span> 0
-          </p>
-          <p class="subtitle">Done</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title" id="bigpoin">
-            <span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span> 0
-          </p>
-          <p class="subtitle">Poin</p>
-        </article>
-      </div>
-    </div>
-  </section>
-  <div class="columns">
-    <div class="column is-6">
-      <div class="card events-card">
-        <header class="card-header">
-          <p class="card-header-title">To Do</p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </a>
-        </header>
-        <div class="card-table">
-          <div class="content">
-            <table class="table is-fullwidth is-striped">
-              <tbody id="list"></tbody>
-            </table>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../../assets/css/home.css" />
+  </head>
+  <body>
+    <div class="">
+      <section class="hero is-primary welcome is-small">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title has-text-weight-bold" id="biggreet">Hello, Admin!</h1>
+            <h2 class="subtitle is-4" id="subtitle">Wishing you a productive day ahead!</h2>
           </div>
         </div>
-        <footer class="card-footer">
-          <a href="#" class="card-footer-item">
-            <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span> View All
-          </a>
-        </footer>
-      </div>
+      </section>
 
-      <div class="card events-card">
-        <header class="card-header">
-          <p class="card-header-title">Doing</p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </a>
-        </header>
-        <div class="card-table">
-          <div class="content">
-            <table class="table is-fullwidth is-striped">
-              <tbody id="doing"></tbody>
-            </table>
+      <section class="info-tiles mb-6">
+        <div class="tile is-ancestor has-text-centered">
+          <div class="tile is-parent">
+            <article class="tile is-child box has-background-light">
+              <p class="title is-size-3" id="bigtodo">
+                <span class="icon"><i class="fa fa-tasks" aria-hidden="true"></i></span>
+                <span class="todo-number">0</span>
+              </p>
+              <p class="subtitle">To Do</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-background-light">
+              <p class="title is-size-3" id="bigdoing">
+                <span class="icon"><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i></span>
+                <span class="doing-number">0</span>
+              </p>
+              <p class="subtitle">Doing</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-background-light">
+              <p class="title is-size-3" id="bigdone">
+                <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                <span class="done-number">0</span>
+              </p>
+              <p class="subtitle">Done</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-background-light">
+              <p class="title is-size-3" id="bigpoin">
+                <span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                <span class="points-number">0</span>
+              </p>
+              <p class="subtitle">Points</p>
+            </article>
           </div>
         </div>
-        <footer class="card-footer">
-          <a href="#" class="card-footer-item">
-            <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span> View All
-          </a>
-        </footer>
-      </div>
-    </div>
-    <div class="column is-6">
-      <div class="card events-card">
-        <header class="card-header">
-          <p class="card-header-title">Done</p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </a>
-        </header>
-        <div class="card-table">
-          <div class="content">
-            <table class="table is-fullwidth is-striped">
-              <tbody id="done"></tbody>
-            </table>
-          </div>
-        </div>
-        <footer class="card-footer">
-          <a href="#" class="card-footer-item">
-            <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span> View All
-          </a>
-        </footer>
-      </div>
+      </section>
 
-      <div class="card events-card">
-        <header class="card-header">
-          <p class="card-header-title">Poin History</p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </a>
-        </header>
-        <div class="card-table">
-          <div class="content">
-            <table class="table is-fullwidth is-striped">
-              <tbody id="list"></tbody>
-            </table>
+      <div class="columns">
+        <div class="column is-6">
+          <div class="card events-card mb-6 has-shadow">
+            <header class="card-header has-background-info">
+              <p class="card-header-title has-text-white">To Do</p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon has-text-white">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-table">
+              <div class="content">
+                <table class="table is-fullwidth is-striped">
+                  <tbody id="list"></tbody>
+                </table>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">
+                <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                <span class="footer-text">View All</span>
+              </a>
+            </footer>
+          </div>
+
+          <div class="card events-card mb-6 has-shadow">
+            <header class="card-header has-background-warning">
+              <p class="card-header-title has-text-white">Doing</p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon has-text-white">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-table">
+              <div class="content">
+                <table class="table is-fullwidth is-striped">
+                  <tbody id="doing"></tbody>
+                </table>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">
+                <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                <span class="footer-text">View All</span>
+              </a>
+            </footer>
           </div>
         </div>
-        <footer class="card-footer">
-          <a href="#" class="card-footer-item">
-            <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span> View All
-          </a>
-        </footer>
+
+        <div class="column is-6">
+          <div class="card events-card mb-6 has-shadow">
+            <header class="card-header has-background-success">
+              <p class="card-header-title has-text-white">Done</p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon has-text-white">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-table">
+              <div class="content">
+                <table class="table is-fullwidth is-striped">
+                  <tbody id="done"></tbody>
+                </table>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">
+                <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                <span class="footer-text">View All</span>
+              </a>
+            </footer>
+          </div>
+
+          <div class="card events-card mb-6 has-shadow">
+            <header class="card-header has-background-info">
+              <p class="card-header-title has-text-white">Points History</p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon has-text-white">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-table">
+              <div class="content">
+                <table class="table is-fullwidth is-striped">
+                  <tbody id="points-history"></tbody>
+                </table>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">
+                <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                <span class="footer-text">View All</span>
+              </a>
+            </footer>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </body>
+</html>
