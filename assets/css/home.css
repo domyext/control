@@ -4,8 +4,11 @@ body {
   }
   
   .hero {
-    background-image: linear-gradient(to right, #4a90e2, #9013fe); /* Gradient background */
+    background-image: linear-gradient(to right, #4a90e2, #8126d0); /* Gradient background */
+    border-radius: 8px;
+
   }
+  
   
   .title {
     color: #333; /* Dark gray for better contrast */
@@ -40,6 +43,8 @@ body {
     padding: 1.5rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
+    border: 2px solid #4a90e2; /* Garis tepi berwarna biru */
+
   }
   
   .box:hover {
