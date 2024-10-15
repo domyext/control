@@ -52,7 +52,7 @@ body {
 }
 
 .button.is-primary {
-  background: linear-gradient(135deg, #0b6878, #10399a);
+  background: linear-gradient(135deg, #089218, #109a7a);
   color: white;
   border: none;
   box-shadow: 0 4px 10px rgba(50, 115, 220, 0.2);
