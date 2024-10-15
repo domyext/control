@@ -1,78 +1,88 @@
 body {
-  background-color: #f4f7fa; /* Soft background color */
-  font-family: 'Arial', sans-serif;
-}
-
-.hero {
-  background-image: linear-gradient(to right, #4a90e2, #9013fe); /* Gradient background */
-}
-
-.title {
-  color: #333; /* Dark gray for better contrast */
-  font-size: 2.5rem; /* Increase font size for prominence */
-}
-
-.subtitle {
-  color: #e0e0e0;
-}
-
-.card {
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-}
-
-.card-header {
-  border-bottom: 2px solid #fff; /* Distinct header separation */
-}
-
-.table th {
-  background-color: #f9f9f9; /* Slightly darker header */
-  color: #333;
-}
-
-.box {
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
-}
-
-.box:hover {
-  background-color: #e7f5ff; /* Hover effect for boxes */
-}
-
-.icon {
-  font-size: 2rem; /* Bigger icons for better visibility */
-  color: #4a90e2; /* Icon color */
-}
-
-.todo-number,
-.doing-number,
-.done-number,
-.points-number {
-  color: #4a90e2; /* Change to the desired color */
-  font-weight: bold; /* Make the numbers bold for emphasis */
-  font-size: 2rem; /* Larger font size for numbers */
-}
-
-.card-footer-item {
-  color: #4a90e2; /* Link color */
-}
-
-.card-footer-item:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-/* Add spacing between the icon and text */
-.card-footer-item .icon {
-  margin-right: 0.5rem; /* Adjust this value to increase/decrease spacing */
-}
-
-.footer-text {
-  vertical-align: middle; /* Align text vertically with the icon */
-}
+    background-color: #f4f7fa; /* Soft background color */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero {
+    background-image: linear-gradient(to right, #4a90e2, #9013fe); /* Gradient background */
+  }
+  
+  .title {
+    color: #333; /* Dark gray for better contrast */
+    font-size: 2.5rem; /* Increase font size for prominence */
+  }
+  
+  .subtitle {
+    color: #e0e0e0;
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .card-header {
+    border-bottom: 2px solid #fff; /* Distinct header separation */
+  }
+  
+  .table th {
+    background-color: #f9f9f9; /* Slightly darker header */
+    color: #333;
+  }
+  
+  .box {
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .box:hover {
+    background-color: #e7f5ff; /* Hover effect for boxes */
+  }
+  
+  .icon {
+    font-size: 2rem; /* Bigger icons for better visibility */
+    color: #4a90e2; /* Icon color */
+  }
+  
+  .todo-number,
+  .doing-number,
+  .done-number,
+  .points-number {
+    color: #4a90e2; /* Change to the desired color */
+    font-weight: bold; /* Make the numbers bold for emphasis */
+    font-size: 2rem; /* Larger font size for numbers */
+  }
+  
+  .card-footer-item {
+    color: #4a90e2; /* Link color */
+  }
+  
+  .card-footer-item:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Add spacing between the icon and text */
+  .card-footer-item .icon {
+    margin-right: 0.5rem; /* Adjust this value to increase/decrease spacing */
+  }
+  
+  .footer-text {
+    vertical-align: middle; /* Align text vertically with the icon */
+  }
+  
+  /* Hover effect for the tiles */
+  .tile.is-parent {
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+  }
+  
+  .tile.is-parent:hover {
+    transform: translateY(-5px); /* Move the tile slightly upwards on hover */
+  }
+  
