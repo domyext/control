@@ -1,84 +1,84 @@
-<!-- Tambahkan CDN Font Awesome -->
+<!-- Add Font Awesome and CSS for styling -->
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="../../../../../../assets/css/blocked.css" />
 </head>
 
-<h1 class="title"><i class="fas fa-calendar-alt"></i> Meeting</h1>
-<div class="form-container">
-  
-  <div class="field">
-    <label class="label"><i class="fas fa-folder"></i> Pilih Proyek</label>
-    <div class="control has-icons-left">
-      <div class="select is-fullwidth">
-        <select id="kode" name="projectName" required>
-          <option>Pilih Proyek</option>
-        </select>
-        <span class="icon is-left">
-          <i class="fas fa-briefcase"></i>
-        </span>
+<body>
+  <div class="form-container">
+    <h1 class="title"><i class="fas fa-calendar-alt"></i> Meeting</h1>
+
+    <div class="field">
+      <label class="field-label"><i class="fas fa-folder"></i> Pilih Proyek</label>
+      <div class="control has-icons-left">
+        <div class="select is-fullwidth">
+          <select id="kode" name="projectName" required>
+            <option>Pilih Proyek</option>
+          </select>
+          <span class="icon is-left">
+            <i class="fas fa-briefcase"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="field-label"><i class="fas fa-heading"></i> Judul Meeting</label>
+      <div class="control">
+        <input class="input" type="text" id="summary" placeholder="Judul Pertemuan" required />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="field-label"><i class="fas fa-link"></i> Lokasi/Link Zoom</label>
+      <div class="control">
+        <input class="input" type="text" id="location" placeholder="Lokasi atau URL Link Zoom" required />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="field-label"><i class="fas fa-calendar-day"></i> Tahun-Bulan-Tanggal</label>
+      <div class="control">
+        <input class="input" type="date" id="date" required />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="field-label"><i class="fas fa-clock"></i> Jam Mulai</label>
+      <div class="control">
+        <input class="input" type="time" id="timeStart" required />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="field-label"><i class="fas fa-clock"></i> Jam Selesai</label>
+      <div class="control">
+        <input class="input" type="time" id="timeEnd" required />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="field-label"><i class="fas fa-list"></i> Agenda Pertemuan</label>
+      <div class="control">
+        <textarea class="textarea" id="description" placeholder="List dari sprint backlog" required></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="field-label"><i class="fas fa-file-pdf"></i> URL PDF dari GDrive:</label>
+      <div class="control">
+        <input class="input" type="text" id="attachments" placeholder="URL PDF" required />
+      </div>
+    </div>
+
+    <div class="field is-grouped is-grouped-centered">
+      <div class="control">
+        <button class="button is-link" id="tombolmeet"><i class="fas fa-paper-plane"></i> Kirim</button>
+      </div>
+      <div class="control">
+        <button class="button is-danger" id="tombolcancelmeet"><i class="fas fa-times"></i> Batal</button>
       </div>
     </div>
   </div>
-
-  <div class="field">
-    <label class="label"><i class="fas fa-heading"></i> Judul Meeting</label>
-    <div class="control">
-      <input class="input" type="text" id="summary" placeholder="Judul Pertemuan" required>
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label"><i class="fas fa-link"></i> Lokasi/Link Zoom</label>
-    <div class="control">
-      <input class="input" type="text" id="location" placeholder="Lokasi atau URL Link Zoom" required>
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label"><i class="fas fa-calendar-day"></i> Tahun-Bulan-Tanggal</label>
-    <div class="control">
-      <input class="input" type="date" id="date" required>
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label"><i class="fas fa-clock"></i> Jam Mulai</label>
-    <div class="control">
-      <input class="input" type="time" id="timeStart" required>
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label"><i class="fas fa-clock"></i> Jam Selesai</label>
-    <div class="control">
-      <input class="input" type="time" id="timeEnd" required>
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label"><i class="fas fa-list"></i> Agenda Pertemuan</label>
-    <div class="control">
-      <textarea class="textarea" id="description" placeholder="List dari sprint backlog" required></textarea>
-    </div>
-  </div>
-
-  <div class="field">
-    <label class="label"><i class="fas fa-file-pdf"></i> URL PDF dari GDrive:</label>
-    <div class="control">
-      <input class="input" type="text" id="attachments" placeholder="URL PDF" required>
-    </div>
-  </div>
-
-  <div class="field is-grouped">
-    <div class="control">
-      <button class="button is-link" id="tombolmeet">
-        <i class="fas fa-paper-plane"> Kirim</i>
-      </button>
-    </div>
-    <div class="control">
-      <button class="button is-danger" id="tombolcancelmeet">
-        <i class="fas fa-times"> Batal</i>
-      </button>
-    </div>
-  </div>
-</div>
+</body>
