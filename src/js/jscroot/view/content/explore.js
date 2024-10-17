@@ -5,7 +5,7 @@ import OSM from 'https://cdn.skypack.dev/ol/source/OSM.js';
 import {fromLonLat} from 'https://cdn.skypack.dev/ol/proj.js';
 
 
-import {id} from '../../url/config.js';
+import {id} from './src/js/jscroot/url/config.js';
 import {addCSSIn} from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
 
 

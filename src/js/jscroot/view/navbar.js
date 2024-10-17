@@ -1,4 +1,4 @@
-import {id} from "../url/config.js";
+import {id} from "./src/js/jscroot/url/config.js";
 
 export function main(){
     showMenu('header-toggle',id.navbar);

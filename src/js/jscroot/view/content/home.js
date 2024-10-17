@@ -10,7 +10,7 @@ import {
   putJSON,
   postJSON,
 } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.8/croot.js";
-import { id, backend } from "../../url/config.js";
+import { id, backend } from "./src/js/jscroot/url/config.js";
 
 let tableTemplate = `
 <td width="5%"><i class="fa fa-bell-o"></i></td>
