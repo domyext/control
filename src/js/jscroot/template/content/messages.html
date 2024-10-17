@@ -3,59 +3,60 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   />
+  <link rel="stylesheet" href="../../../../../assets/css/msg.css">
 </head>
-<section
-  class="section is-flex is-flex-direction-column is-justify-content-space-between">
-  <div class="container">
-    <div>
-      <p class="title">Messages</p>
-    </div>
-  </div>
 
-  <div class="container chat-container">
-    <div class="box chat-messages" id="log">
-      <div class="message sent">
-        <b>You</b>
-        <p>
-          Any progress on the gateway API?
-        </p>
-      </div>
-      <div class="message received">
-        <b>Jade</b>
-        <p>
-          Already tunning on testing. Will be deployed into production if everything is fine.
-        </p>
-      </div>
-      <div class="message received">
-        <b>Bart</b>
-        <p>
-          Ay caramba! everything is fine. Deploying into prod!
-        </p>
-      </div>
-      <div class="message sent">
-        <b>You</b>
-        <p>
-          Great job guys!
-        </p>
-      </div>
+<body>
+  <div class="chat-wrapper">
+    <div class="chat-header">
+      Messages
     </div>
-    <div class="field has-addons">
-      <div class="control is-expanded">
-        <span class="input-icon">
-          <i class="fas fa-comment-dots"></i>
-        </span>
-        <input
-          class="input"
-          type="text"
-          placeholder="Type a message..."
-          id="msg"
-        />
+
+    <div class="chat-container">
+      <div class="box chat-messages" id="log">
+        <div class="message sent">
+          <b>You</b>
+          <p>
+            Any progress on the gateway API?
+          </p>
+        </div>
+        <div class="message received">
+          <b>Jade</b>
+          <p>
+            Already running on testing. Will be deployed into production if everything is fine.
+          </p>
+        </div>
+        <div class="message received">
+          <b>Bart</b>
+          <p>
+            Ay caramba! everything is fine. Deploying into prod!
+          </p>
+        </div>
+        <div class="message sent">
+          <b>You</b>
+          <p>
+            Great job guys!
+          </p>
+        </div>
       </div>
-      <div class="control">
-        <button class="button is-primary" id="sendbutton">
-          <i class="fas fa-paper-plane"></i>
-        </button>
+      <div class="field has-addons">
+        <div class="control is-expanded" style="position: relative;">
+          <span class="input-icon">
+            <i class="fas fa-comment-dots"></i>
+          </span>
+          <input
+            class="input"
+            type="text"
+            placeholder="Type a message..."
+            id="msg"
+          />
+        </div>
+        <div class="control">
+          <button class="button is-primary" id="sendbutton">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</body>
