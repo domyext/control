@@ -1,7 +1,6 @@
 import {disableInput,addCSS} from 'https://cdn.jsdelivr.net/gh/jscroot/element@0.1.7/croot.js';
 
 export async function main(){
-  addCSS('./assets/css/chat.css');
   var conn;
   const sep='|||';
   const msg = document.getElementById("msg");
