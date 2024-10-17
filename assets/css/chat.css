@@ -1,6 +1,12 @@
 /* Global Styles */
 body {
-  background: #fff;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 /* Hero Section */
@@ -13,8 +19,29 @@ body {
   font-weight: bold;
 }
 
+/* Chat Wrapper */
+.chat-wrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  margin-right: 8px;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
 /* Chat Container */
-.container.chat-container {
+.container.chat-container, .chat-container {
   min-height: 70vh; /* Ensure full viewport height */
   min-width: 70%;
   display: flex;
@@ -22,55 +49,61 @@ body {
   overflow-y: auto;
   max-height: 60vh;
   margin-top: 20px;
+  justify-content: space-between;
+  height: 500px;
 }
 
 .chat-messages {
-  flex: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 15px 3rem;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 15px 3rem;
-  border-radius: 10px;
-  background-color: #f5f5f5;
-  overflow-y: auto;
-  margin-top: 2rem;
 }
 
 /* Chat Bubbles */
-.chat-message {
+.chat-message, .message {
   display: block;
   padding: 10px;
   margin-bottom: 10px;
   width: fit-content;
-  background-color: #00d1b2;
   max-width: 70%;
+  background-color: #007bff;
   border-radius: 10px 0 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.chat-message.user {
+.chat-message.user, .message.sent {
   align-self: flex-end;
-  background-color: #00d1b2;
+  background-color: #007bff;
   color: white;
+  text-align: right;
 }
 
-.message.sent {
-  align-self: flex-end;
-  background-color: #00d1b2;
-  border-radius: 10px 0 10px 10px;
-  color: white;
-}
-
-.chat-message.other {
+.chat-message.other, .message.received {
   background-color: #f8d7da; /* Other message color */
   align-self: flex-start;
   border-radius: 0 10px 10px 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: left;
+}
+
+.message b {
+  display: block;
+  margin-bottom: 5px;
 }
 
 /* Chat Input */
-.chat-input-container {
+.chat-input-container, .field.has-addons {
   display: flex;
   padding: 10px;
   border-top: 1px solid #ddd;
+  background: #ffffff;
 }
 
 #msg {
@@ -78,6 +111,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
+  padding-left: 30px;
 }
 
 .control.is-expanded {
@@ -98,25 +132,17 @@ body {
 }
 
 /* Buttons */
-.button {
+.button, .button.is-primary {
   border-radius: 20px;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.button.is-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
 }
 
 #sendbutton i {
   margin-left: 5px;
-}
-
-/* Message Bubbles (Sent and Received) */
-.message {
-  padding: 10px;  
-  max-width: fit-content;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.message.received {
-  align-self: flex-start;
-  border-radius: 0 10px 10px 10px;
-  background-color: #e0e0e0;
 }
