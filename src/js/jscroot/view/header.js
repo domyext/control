@@ -5,7 +5,7 @@ import { setInner } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croo
 import { getJSON } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.7/croot.js";
 
 //internal call
-import { backend } from "./src/js/jscroot/url/config.js";
+import { backend } from "../url/config.js";
 
 export function main() {
    getJSON(backend.user.data, "login", getCookie("login"), getUserFunction);
