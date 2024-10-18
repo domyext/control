@@ -1,0 +1,8 @@
+.field.is-grouped {
+    justify-content: center; /* Memposisikan tombol di tengah */
+  }
+  
+  .field.is-grouped .control {
+    margin: 0 5px; /* Memberi jarak antara tombol */
+  }
+  
