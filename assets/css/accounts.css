@@ -6,3 +6,27 @@
     margin: 0 5px; /* Memberi jarak antara tombol */
   }
   
+  /* Gradasi untuk tombol Kirim (Biru) */
+.button.is-link {
+    background-image: linear-gradient(45deg, #007bff, #3399ff); /* Gradasi biru */
+    color: white; /* Warna teks */
+    border: none; /* Menghapus border */
+    transition: background 0.3s; /* Animasi transisi saat hover */
+  }
+  
+  .button.is-link:hover {
+    background-image: linear-gradient(45deg, #0056b3, #1a75ff); /* Gradasi biru lebih gelap */
+  }
+  
+  /* Gradasi untuk tombol Batal (Merah) */
+  .button.is-danger {
+    background-image: linear-gradient(45deg, #e3342f, #ff6666); /* Gradasi merah */
+    color: white; /* Warna teks */
+    border: none; /* Menghapus border */
+    transition: background 0.3s; /* Animasi transisi saat hover */
+  }
+  
+  .button.is-danger:hover {
+    background-image: linear-gradient(45deg, #cc0000, #e60000); /* Gradasi merah lebih gelap */
+  }
+  
