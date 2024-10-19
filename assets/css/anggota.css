@@ -7,6 +7,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  .title {
+    text-align: center; /* Memposisikan teks di tengah */
+  }
+  
   .notification {
     border-left: 4px solid #3273dc; /* Blue color */
   }
