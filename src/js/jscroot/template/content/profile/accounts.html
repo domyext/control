@@ -1,83 +1,122 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
   <link rel="stylesheet" href="./assets/css/accounts.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .box {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .title {
+      color: #3273dc;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .input.is-static {
+      background-color: #e9ecef;
+      border-color: #e9ecef;
+      color: #6c757d;
+      cursor: not-allowed;
+    }
+    .field .label {
+      color: #4a4a4a;
+    }
+    .button.is-link {
+      background-color: #3273dc;
+      color: white;
+    }
+    .button.is-danger {
+      background-color: #ff3860;
+      color: white;
+    }
+    .button i {
+      margin-right: 5px;
+    }
+    .field.is-grouped {
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<h1 class="title has-text-centered">
-  <span class="icon"><i class="fas fa-user-edit"></i></span> Update Informasi Akun
-</h1>
 
-<div class="box">
-  <div class="field">
-    <label class="label">Nomor Handphone</label>
-    <div class="control has-icons-left">
-      <input class="input is-static" id="phonenumber" name="phonenumber" type="tel" placeholder="Nomor tidak dapat diubah" />
-      <span class="icon is-small is-left">
-        <i class="fas fa-phone"></i>
-      </span>
-    </div>
-  </div>
+<body>
+  <h1 class="title has-text-centered">
+    <span class="icon"><i class="fas fa-user-edit"></i></span> Update Informasi Akun
+  </h1>
+        <label class="label" for="phonenumber">Nomor Handphone</label>
+        <div class="control has-icons-left">
+          <input class="input is-static" id="phonenumber" name="phonenumber" type="tel" placeholder="Nomor tidak dapat diubah" readonly />
+          <span class="icon is-small is-left">
+            <i class="fas fa-phone"></i>
+          </span>
+        </div>
+      </div>
 
-  <div class="field">
-    <label class="label">Alias</label>
-    <div class="control has-icons-left">
-      <input class="input is-static" id="name" name="name" type="text" placeholder="Alias tidak dapat diubah" />
-      <span class="icon is-small is-left">
-        <i class="fas fa-user"></i>
-      </span>
-    </div>
-  </div>
+      <div class="field">
+        <label class="label" for="name">Alias</label>
+        <div class="control has-icons-left">
+          <input class="input is-static" id="name" name="name" type="text" placeholder="Alias tidak dapat diubah" readonly />
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
 
-  <div class="field">
-    <label class="label">Email yang Terpasang di Android/iPhone</label>
-    <div class="control has-icons-left">
-      <input class="input" id="email" name="email" type="email" placeholder="Masukkan email" />
-      <span class="icon is-small is-left">
-        <i class="fas fa-envelope"></i>
-      </span>
-    </div>
-  </div>
+      <div class="field">
+        <label class="label" for="email">Email yang Terpasang di Android/iPhone</label>
+        <div class="control has-icons-left">
+          <input class="input" id="email" name="email" type="email" placeholder="Masukkan email" required />
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
 
-  <div class="field">
-    <label class="label">GitHub Username</label>
-    <div class="control has-icons-left">
-      <input class="input" id="githubusername" name="githubusername" type="text" placeholder="Masukkan GitHub Username" />
-      <span class="icon is-small is-left">
-        <i class="fab fa-github"></i>
-      </span>
-    </div>
-  </div>
+      <div class="field">
+        <label class="label" for="githubusername">GitHub Username</label>
+        <div class="control has-icons-left">
+          <input class="input" id="githubusername" name="githubusername" type="text" placeholder="Masukkan GitHub Username" />
+          <span class="icon is-small is-left">
+            <i class="fab fa-github"></i>
+          </span>
+        </div>
+      </div>
 
-  <div class="field">
-    <label class="label">GitLab Username</label>
-    <div class="control has-icons-left">
-      <input class="input" id="gitlabusername" name="gitlabusername" type="text" placeholder="Masukkan GitLab Username" />
-      <span class="icon is-small is-left">
-        <i class="fab fa-gitlab"></i>
-      </span>
-    </div>
-  </div>
+      <div class="field">
+        <label class="label" for="gitlabusername">GitLab Username</label>
+        <div class="control has-icons-left">
+          <input class="input" id="gitlabusername" name="gitlabusername" type="text" placeholder="Masukkan GitLab Username" />
+          <span class="icon is-small is-left">
+            <i class="fab fa-gitlab"></i>
+          </span>
+        </div>
+      </div>
 
-  <div class="field">
-    <label class="label">Githost Username</label>
-    <div class="control has-icons-left">
-      <input class="input" id="githostusername" name="githostusername" type="text" placeholder="Masukkan Githost Username" />
-      <span class="icon is-small is-left">
-        <i class="fas fa-code-branch"></i>
-      </span>
-    </div>
-  </div>
+      <div class="field">
+        <label class="label" for="githostusername">Githost Username</label>
+        <div class="control has-icons-left">
+          <input class="input" id="githostusername" name="githostusername" type="text" placeholder="Masukkan Githost Username" />
+          <span class="icon is-small is-left">
+            <i class="fas fa-code-branch"></i>
+          </span>
+        </div>
+      </div>
 
-  <div class="field is-grouped">
-    <div class="control">
-      <button class="button is-link" id="buttonkirimaccount">
-        <i class="fas fa-paper-plane"></i> Kirim
-      </button>
-    </div>
-    <div class="control">
-      <button class="button is-danger" id="buttonbatalaccount">
-        <i class="fas fa-ban"></i> Batal
-      </button>
-    </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link" id="buttonkirimaccount" type="submit"><i class="fas fa-paper-plane"></i> Kirim</button>
+        </div>
+        <div class="control">
+          <button class="button is-danger" id="buttonbatalaccount" type="button"><i class="fas fa-ban"></i> Batal</button>
+        </div>
+      </div>
+    </form>
   </div>
-  
-</div>
+</body>
