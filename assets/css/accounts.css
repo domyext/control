@@ -1,32 +1,54 @@
 .field.is-grouped {
-    justify-content: center; /* Memposisikan tombol di tengah */
-  }
-  
-  .field.is-grouped .control {
-    margin: 0 5px; /* Memberi jarak antara tombol */
-  }
-  
-  /* Gradasi untuk tombol Kirim (Biru) */
+  justify-content: center; /* Memposisikan tombol di tengah */
+  margin-top: 20px; /* Memberi jarak atas pada grup tombol */
+}
+
+.field.is-grouped .control {
+  margin: 0 10px; /* Memberi jarak yang lebih nyaman antara tombol */
+}
+
+/* Tombol Kirim (Biru) dengan efek shadow dan hover yang halus */
 .button.is-link {
-    background-image: linear-gradient(45deg, #007bff, #3399ff); /* Gradasi biru */
-    color: white; /* Warna teks */
-    border: none; /* Menghapus border */
-    transition: background 0.3s; /* Animasi transisi saat hover */
-  }
-  
-  .button.is-link:hover {
-    background-image: linear-gradient(45deg, #0056b3, #1a75ff); /* Gradasi biru lebih gelap */
-  }
-  
-  /* Gradasi untuk tombol Batal (Merah) */
-  .button.is-danger {
-    background-image: linear-gradient(45deg, #e3342f, #ff6666); /* Gradasi merah */
-    color: white; /* Warna teks */
-    border: none; /* Menghapus border */
-    transition: background 0.3s; /* Animasi transisi saat hover */
-  }
-  
-  .button.is-danger:hover {
-    background-image: linear-gradient(45deg, #cc0000, #e60000); /* Gradasi merah lebih gelap */
-  }
-  
+  background-image: linear-gradient(45deg, #007bff, #3399ff); /* Gradasi biru */
+  color: white; /* Warna teks */
+  border: none; /* Menghapus border */
+  padding: 10px 20px; /* Menambahkan padding agar lebih nyaman */
+  border-radius: 5px; /* Membuat sudut tombol lebih bulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberi shadow untuk efek 3D */
+  transition: all 0.3s ease; /* Animasi transisi yang lebih smooth */
+}
+
+.button.is-link:hover {
+  background-image: linear-gradient(45deg, #0056b3, #1a75ff); /* Gradasi biru lebih gelap */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Membuat shadow lebih besar saat hover */
+  transform: translateY(-2px); /* Sedikit mengangkat tombol saat hover */
+}
+
+/* Tombol Batal (Merah) dengan efek shadow dan hover yang halus */
+.button.is-danger {
+  background-image: linear-gradient(45deg, #e3342f, #ff6666); /* Gradasi merah */
+  color: white; /* Warna teks */
+  border: none; /* Menghapus border */
+  padding: 10px 20px; /* Menambahkan padding */
+  border-radius: 5px; /* Membuat sudut tombol lebih bulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberi shadow */
+  transition: all 0.3s ease; /* Animasi transisi yang lebih smooth */
+}
+
+.button.is-danger:hover {
+  background-image: linear-gradient(45deg, #cc0000, #e60000); /* Gradasi merah lebih gelap */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Membuat shadow lebih besar saat hover */
+  transform: translateY(-2px); /* Sedikit mengangkat tombol saat hover */
+}
+
+/* Style umum untuk ikon di tombol agar lebih rapi */
+.button i {
+  margin-right: 8px; /* Memberikan jarak antara ikon dan teks */
+  font-size: 16px; /* Membuat ikon sedikit lebih besar untuk lebih menonjol */
+}
+
+/* Umum untuk teks tombol */
+.button {
+  font-size: 16px; /* Ukuran teks yang lebih besar dan mudah dibaca */
+  font-weight: bold; /* Membuat teks pada tombol lebih tegas */
+}
