@@ -31,17 +31,20 @@ body {
   
   .card-header {
     background-image: linear-gradient(to right, #4a90e2, #6b60e6); /* Kurangi titik warna */
-    color: #fff; /* Teks berwarna putih untuk kontras */
-    border-radius: 8px 8px 0 0; /* Membulatkan hanya sudut atas */
-}
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out the title and icon */
+    align-items: center; /* Center vertically */
+    padding: 0 1rem; /* Add padding for better spacing */
+  }
 
   .card-header1 {
     background-image: linear-gradient(to right, #6b60e6, #4a90e2); /* Kurangi titik warna */
-    color: #fff; /* Teks berwarna putih untuk kontras */
-    border-radius: 8px 8px 0 0; /* Membulatkan hanya sudut atas */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out the title and icon */
+    align-items: center; /* Center vertically */
+    padding: 0 1rem; /* Add padding for better spacing */
   }
 
-  
   .table th {
     background-color: #f9f9f9; /* Slightly darker header */
     color: #333;
