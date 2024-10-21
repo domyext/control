@@ -30,8 +30,12 @@ body {
   }
   
   .card-header {
-    border-bottom: 2px solid #fff; /* Distinct header separation */
-  }
+    background-image: linear-gradient(to right, #4a90e2, #6b60e6, #8126d0); /* Menambahkan titik warna untuk transisi smooth */
+    color: #fff; /* Teks berwarna putih untuk kontras */
+    border-radius: 8px 8px 0 0; /* Membulatkan hanya sudut atas */
+}
+
+
   
   .table th {
     background-color: #f9f9f9; /* Slightly darker header */
