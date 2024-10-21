@@ -4,7 +4,7 @@ body {
   }
   
   .hero {
-    background-image: linear-gradient(to right, #4a90e2, #8126d0); /* Gradient background */
+    background-image: linear-gradient(to right, #4a90e2, #6b60e6); /* Kurangi kontras dengan hanya dua warna */
     border-radius: 8px;
 
   }
@@ -30,11 +30,10 @@ body {
   }
   
   .card-header {
-    background-image: linear-gradient(to right, #4a90e2, #6b60e6, #8126d0); /* Menambahkan titik warna untuk transisi smooth */
+    background-image: linear-gradient(to right, #4a90e2, #6b60e6); /* Kurangi titik warna */
     color: #fff; /* Teks berwarna putih untuk kontras */
     border-radius: 8px 8px 0 0; /* Membulatkan hanya sudut atas */
 }
-
 
   
   .table th {
