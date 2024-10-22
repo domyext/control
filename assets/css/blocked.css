@@ -4,10 +4,11 @@ body {
 
 .form-container {
   margin-top: 50px;
+  
 }
 
 .form-box {
-  background-color: white;
+  background-color: #f9f9f9;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -41,6 +42,7 @@ body {
 .button.is-danger:hover {
   background-color: #ff3860;
 }
+
 
 .input,
 .textarea {
