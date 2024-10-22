@@ -51,13 +51,15 @@ body {
 .box {
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
-  border: 2px solid #4a90e2; /* Garis tepi berwarna biru */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Default shadow */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  border: 2px solid #4a90e2; /* Border sesuai dengan shadow */
 }
 
 .box:hover {
-  background-color: #e7f5ff; /* Hover effect for boxes */
+  background-color: #e7f5ff; /* Warna latar belakang saat di-hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Konsistensi shadow */
+  border: 2px solid #6b60e6; /* Border berubah sesuai hover */
 }
 
 .icon {
@@ -93,9 +95,12 @@ body {
 
 /* Hover effect for the tiles */
 .tile.is-parent {
-  transition: transform 0.3s ease; /* Smooth transition for the transform */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  border-radius: 8px; /* Border radius konsisten */
 }
 
 .tile.is-parent:hover {
-  transform: translateY(-2px); /* Kurangi pergerakan hover untuk konsistensi */
+  transform: translateY(-2px); /* Kurangi pergerakan hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Konsistensi shadow sesuai border */
+  
 }
