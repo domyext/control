@@ -1,4 +1,4 @@
-import {id} from "./src/js/jscroot/url/config.js";
+import {id} from "../url/config.js";
 
 export function main(){
     showMenu('header-toggle',id.navbar);
@@ -6,7 +6,7 @@ export function main(){
     activeLink('.nav__dropdown-item');
 }
 
-/*==================== SHOW NAVBAR ====================*/
+/==================== SHOW NAVBAR ====================/
 function showMenu(headerToggle, navbarId){
     const toggleBtn = document.getElementById(headerToggle);
     const nav = document.getElementById(navbarId);
@@ -23,7 +23,7 @@ function showMenu(headerToggle, navbarId){
 
 }
 
-/*==================== LINK ACTIVE ====================*/
+/==================== LINK ACTIVE ====================/
 function activeLink(className){//'.nav__link'
     const linkColor = document.querySelectorAll(className);
     linkColor.forEach(l => {l.addEventListener('click', function() { 
@@ -32,7 +32,7 @@ function activeLink(className){//'.nav__link'
     } );});
 }
 
-/*==================== LOGOUT LOGIC ====================*/
+/==================== LOGOUT LOGIC ====================/
 const logoutButton = document.querySelector(".nav__logout");
 
 if (logoutButton) {
@@ -52,5 +52,3 @@ if (logoutButton) {
     });
   });
 }
-
-
