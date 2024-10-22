@@ -1,31 +1,45 @@
-body {
-  background-color: #f5f7fa;
-}
-
-.form-container {
+form-container {
   max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #c3bef0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title {
   text-align: center;
+  font-weight: 700;
+  color: #3273dc;
   margin-bottom: 20px;
-  color: #333;
+  margin-right: 10px; /* Ruang antara ikon dan teks judul */
+  font-size: 1.5rem; /* Ukuran ikon */
+
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.control .textarea:focus,
+.control .input:focus {
+  border-color: #3273dc;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.button.is-primary:hover {
+  background-color: #276cda;
+}
+
+.button.is-light:hover {
+  background-color: #f5f5f5;
+}
+
+.icon.is-left {
+  left: 10px;
 }
 
 .label {
-  font-weight: bold;
-}
-
-.button {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.button:hover {
-  opacity: 0.8;
+  font-weight: 600;
+  color: #4a4a4a;
 }
