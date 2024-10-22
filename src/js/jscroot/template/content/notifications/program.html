@@ -11,8 +11,9 @@
     <div class="field">
       <label class="label"><i class="fas fa-clipboard-list"></i> Nama Proyek</label>
       <div class="control has-icons-left">
-        <div class="select is-fullwidth">
-          <select id="kode" name="projectName" required>
+        <div class="select is-fullwidth is-focused">
+          <select id="kode" name="projectName" required 
+            style="background-color: #defcf9; border: 2px solid #cadefc; color: #000; padding: 5px 9px; font-size: 16px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; width: 100%; line-height: 1.5;">
             <option value="" disabled selected>Pilih Proyek</option>
             <option value="gobizid">gobizid</option>
             <option value="domytext-signin">domytext-signin</option>
@@ -25,18 +26,17 @@
           </select>
         </div>
       </div>
-  </div>
-  
-
+    </div>
+    
     <div class="field">
-      <label class="label"><i class="fas fa-users"></i> Nama Pengguna</label>
+      <label class="label"><i class="fa fa-user"></i> Nama Pengguna</label>
       <div class="control">
         <input class="input" type="text" id="namaPengguna" placeholder="Nama Product Owner atau Reviewer" required
           style="background-color: #defcf9; border: 2px solid #cadefc; color: #000; padding: 12px 16px; font-size: 16px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; width: 100%;" />
       </div>
     </div>
     
-    <div class="field">
+  <div class="field">
       <label class="label"><i class="fa fa-mobile"></i> Kontak WhatsApp</label>
       <div class="control has-icons-left">
           <input class="input" type="tel" id="phone" placeholder="+6281234567890" required
@@ -58,12 +58,12 @@
     <div class="field is-grouped is-grouped-centered">
       <div class="control">
         <button class="button is-link" id="tombolprogramtask">
-          <i class="fas fa-paper-plane"> Kirim</i>
+          <i class="fa fa-paper-plane">Kirim</i>
         </button>
       </div>
       <div class="control">
         <button class="button is-danger" id="tombolcancelprogramtask">
-          <i class="fas fa-times"> Batal</i>
+          <i class="fas fa-times">Batal</i>
         </button>
       </div>
     </div>
