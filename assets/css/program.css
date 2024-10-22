@@ -2,14 +2,23 @@ body {
   background-color: #f5f7fa;
 }
 
+/* .form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #c3bef0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+} */
 .form-container {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #ffffff;
+  background: linear-gradient(45deg, #c3bef0, #cca8e9);
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .title {
   text-align: center;
