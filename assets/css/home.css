@@ -1,6 +1,8 @@
 body {
   background-color: #f4f7fa; /* Soft background color */
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+  line-height: 1.6; /* Meningkatkan keterbacaan dengan line-height */
+  color: #333; /* Warna teks default */
 }
 
 .hero {
@@ -10,11 +12,15 @@ body {
 
 .title {
   color: #333; /* Dark gray for better contrast */
-  font-size: 2.5rem; /* Increase font size for prominence */
+  font-size: 2.5rem; /* Ukuran font untuk judul */
+  font-weight: 700; /* Menggunakan bold untuk judul */
+  margin-bottom: 0.5rem; /* Menambahkan jarak di bawah judul */
 }
 
 .subtitle {
-  color: #e0e0e0;
+  font-size: 1.25rem; /* Ukuran font lebih kecil untuk subtitle */
+  color: #666; /* Warna teks subtitle */
+  margin-bottom: 1rem; /* Jarak di bawah subtitle */
 }
 
 .card {
@@ -34,6 +40,8 @@ body {
   justify-content: space-between; /* Space out the title and icon */
   align-items: center; /* Center vertically */
   padding: 0 1rem; /* Add padding for better spacing */
+  font-size: 1.5rem; /* Ukuran font untuk judul header card */
+  font-weight: 700; /* Bold untuk penekanan */
 }
 .card-header1 {
   background-image: linear-gradient(to right, #6b60e6, #4a90e2); /* Kurangi titik warna */
@@ -41,11 +49,13 @@ body {
   justify-content: space-between; /* Space out the title and icon */
   align-items: center; /* Center vertically */
   padding: 0 1rem; /* Add padding for better spacing */
+  font-size: 1.5rem; /* Ukuran font untuk judul header card */
+  font-weight: 700; /* Bold untuk penekanan */
 }
 
 .table th {
-  background-color: #f9f9f9; /* Slightly darker header */
-  color: #333;
+  font-weight: 700; /* Menggunakan bold untuk header tabel */
+  text-transform: uppercase; /* Mengubah huruf menjadi kapital */
 }
 
 .box {
@@ -78,6 +88,8 @@ body {
 
 .card-footer-item {
   color: #4a90e2; /* Link color */
+  font-size: 1rem; /* Ukuran font footer item */
+  font-weight: 400; /* Normal weight untuk footer */
 }
 
 .card-footer-item:hover {
@@ -102,5 +114,4 @@ body {
 .tile.is-parent:hover {
   transform: translateY(-2px); /* Kurangi pergerakan hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Konsistensi shadow sesuai border */
-  
 }
