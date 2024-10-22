@@ -46,16 +46,30 @@ body {
 
 
 .avatar img {
-    max-width: 500px; /* Ukuran gambar avatar */
-    max-height: 500px; /* Ukuran gambar avatar */
-    border: 5px solid #4a90e2; /* Border gambar */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan pada gambar */
-    transition: transform 0.3s; /* Transisi untuk gambar */
+    max-width: 400px; /* Menyesuaikan ukuran agar lebih proporsional */
+    max-height: 400px; /* Menyesuaikan ukuran agar lebih proporsional */
+    border-radius: 50%; /* Membuat gambar menjadi bulat (avatar style) */
+    
+    /* Border lebih lembut dengan sedikit gradasi */
+    border: 3px solid rgba(74, 144, 226, 0.8); 
+
+    /* Bayangan lembut dan natural */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15), 
+                0 4px 8px rgba(0, 0, 0, 0.05);
+
+    /* Efek transisi yang lebih halus untuk hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .avatar img:hover {
-    transform: scale(1.1); /* Membesar saat hover pada gambar */
+    /* Efek hover dengan sedikit zoom */
+    transform: scale(1.05); 
+    
+    /* Bayangan lebih intens saat di-hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), 
+                0 6px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 .hero-title {
     color: #ffffff; /* Warna teks judul */
