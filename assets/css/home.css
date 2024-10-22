@@ -25,6 +25,7 @@ body {
 
 .card:hover {
   transform: translateY(-2px); /* Kurangi pergerakan hover agar lebih halus */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
 }
 
 .card-header {
